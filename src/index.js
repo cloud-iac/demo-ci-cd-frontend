@@ -11,7 +11,7 @@ import HttpClient from './network/http';
 import TokenStorage from './db/token';
 
 // const baseURL = process.env.REACT_APP_BASE_URL;
-const baseURL = "http://10.0.13.131:8080";
+const baseURL = "http://localhost";
 const tokenStorage = new TokenStorage();
 const httpClient = new HttpClient(baseURL);
 const authErrorEventBus = new AuthErrorEventBus();
