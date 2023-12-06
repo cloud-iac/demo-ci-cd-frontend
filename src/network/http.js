@@ -5,25 +5,23 @@ export default class HttpClient {
   }
 
   async fetch(url, options) {
-    const res = await axios(`${this.baseURL}${url}`, {
-      ...options,
-      headers: {
+    try{
+      const res = await axios(`${this.baseURL}${url}`,{
+        ...options,
+        headers: {
         'Content-Type': 'application/json',
         ...options.headers,
-      },
-    });
-    let data;
-    try {
-      data = await res.json();
-    } catch (error) {
+      }});
+      return res.json()
+    }catch(error){
       console.error(error);
+      return error.response
+        ? {
+            status: error.response.status,
+            message: error.response.data.message,
+            url: error.config.url,
+          }
+        : { error: error.message };
     }
-
-    if (res.status > 299 || res.status < 200) {
-      const message =
-        data && data.message ? data.message : 'Something went wrong! 🤪';
-      throw new Error(message);
-    }
-    return data;
   }
 }
