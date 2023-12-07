@@ -4,7 +4,8 @@ export default class HttpClient {
   }
 
   async fetch(url, options) {
-    const res = await fetch(`${this.baseURL}${url}`, {
+    //`${this.baseURL}${url}`
+    const res = await fetch(url, {
       ...options,
       mode: 'cors',
       credentials: 'include',
