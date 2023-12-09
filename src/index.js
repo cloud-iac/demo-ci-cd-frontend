@@ -11,7 +11,7 @@ import HttpClient from './network/http';
 import TokenStorage from './db/token';
 
 // const baseURL = process.env.REACT_APP_BASE_URL;
-const baseURL = "http://internal-back-tier-alb-1945782263.ap-northeast-2.elb.amazonaws.com";
+const baseURL = "http://internal-back-tier-alb-1436954390.ap-northeast-2.elb.amazonaws.com";
 const tokenStorage = new TokenStorage();
 const httpClient = new HttpClient(baseURL);
 const authErrorEventBus = new AuthErrorEventBus();
