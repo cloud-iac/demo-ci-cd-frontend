@@ -23,3 +23,4 @@ COPY --from=builder /usr/src/app/build /usr/share/nginx/html
 
 # 80포트 오픈하고 nginx를 백그라운드로 실행
 EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
