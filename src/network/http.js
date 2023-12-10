@@ -7,11 +7,8 @@ export default class HttpClient {
     //`${this.baseURL}${url}`
     const res = await fetch(`${this.baseURL}${url}`, {
       ...options,
-      mode: 'cors',
-      credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json',
         ...options.headers,
       },
     });
