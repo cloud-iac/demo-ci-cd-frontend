@@ -10,8 +10,7 @@ import { AuthErrorEventBus } from './context/AuthContext';
 import HttpClient from './network/http';
 import TokenStorage from './db/token';
 
-// const baseURL = process.env.REACT_APP_BASE_URL;
-const baseURL = "http://api.lundaljung.com";
+const baseURL = "http://localhost";
 const tokenStorage = new TokenStorage();
 const httpClient = new HttpClient(baseURL);
 const authErrorEventBus = new AuthErrorEventBus();
