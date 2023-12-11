@@ -10,7 +10,7 @@ import { AuthErrorEventBus } from './context/AuthContext';
 import HttpClient from './network/http';
 import TokenStorage from './db/token';
 
-const baseURL = "http://www.lundaljung.ocm";
+const baseURL = "http://lundaljung.com";
 const tokenStorage = new TokenStorage();
 const httpClient = new HttpClient(baseURL);
 const authErrorEventBus = new AuthErrorEventBus();
