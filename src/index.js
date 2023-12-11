@@ -10,7 +10,7 @@ import { AuthErrorEventBus } from './context/AuthContext';
 import HttpClient from './network/http';
 import TokenStorage from './db/token';
 
-const baseURL = "http://front-tier-alb-1610647878.ap-northeast-2.elb.amazonaws.com";
+const baseURL = "http://front-tier-alb-684012605.ap-northeast-2.elb.amazonaws.com";
 const tokenStorage = new TokenStorage();
 const httpClient = new HttpClient(baseURL);
 const authErrorEventBus = new AuthErrorEventBus();
