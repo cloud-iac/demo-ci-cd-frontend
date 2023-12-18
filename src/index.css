@@ -57,7 +57,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-black);
+  background-color: var(--color-green);
   padding: 8px;
 }
 
@@ -80,7 +80,7 @@ button {
 
 .logo-user {
   font-size: 0.7rem;
-  color: var(--color-blue);
+  color: var(--color-yellow);
   padding-top: 8px;
 }
 
@@ -117,7 +117,7 @@ button {
 
 .form-btn {
   font-size: 1.2rem;
-  background: var(--color-blue);
+  background: var(--color-green);
   font-weight: bold;
   padding: 4px;
 }
@@ -136,7 +136,7 @@ button {
 }
 
 .form-input:focus {
-  outline: 2px dotted var(--color-blue);
+  outline: 2px dotted var(--color-darkBlue);
 }
 
 .form-signup {
@@ -152,7 +152,7 @@ button {
   /* Firefox */
   scrollbar-width: 6px;
   scrollbar-color: var(--color-darkGrey);
-  scrollbar-face-color: var(--color-blue);
+  scrollbar-face-color: var(--color-darkBlue);
 }
 
 .tweets::-webkit-scrollbar {
@@ -163,7 +163,7 @@ button {
 
 .tweets::-webkit-scrollbar-thumb {
   /* Safari and Chrome */
-  background-color: var(--color-blue);
+  background-color: var(--color-darkBlue);
 }
 
 .tweets-empty {
@@ -221,7 +221,7 @@ button {
 .tweet-date {
   font-size: 0.7rem;
   margin-left: 4px;
-  color: var(--color-blue);
+  color: var(--color-darkBlue);
   font-weight: bold;
 }
 
@@ -259,7 +259,7 @@ button {
 .tweet-action-btn {
   font-size: 1.1rem;
   font-weight: bold;
-  color: var(--color-blue);
+  color: var(--color-darkBlue);
   transition: transform 300ms;
 }
 
@@ -275,7 +275,7 @@ button {
 .form-btn-update,
 .form-btn-cancel {
   font-size: 0.8rem;
-  background: var(--color-blue);
+  background: var(--color-darkBlue);
   font-weight: bold;
   padding: 4px;
 }
