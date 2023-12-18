@@ -16,7 +16,7 @@ jobs:
     - name: Setting .env
       run: |
         echo "JWT_SECRET=${{secrets.REACT_APP_API_URL}}" >> .env
-
+        cat .env
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
     
